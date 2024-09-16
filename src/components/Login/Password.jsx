@@ -1,10 +1,18 @@
 import React from "react";
 
-const Password = () => {
+const Password = ({ setPassword }) => {
+  const onPasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div>
       Password
-      <input type="password" placeholder="password" />
+      <input
+        type="password"
+        placeholder="password"
+        onChange={onPasswordChange}
+      />
     </div>
   );
 };

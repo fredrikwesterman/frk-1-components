@@ -1,10 +1,19 @@
 import React from "react";
 
-const User = () => {
+const User = ({ setUser }) => {
+  const onUserComplete = (e) => {
+    setUser(e.target.value);
+  };
+
   return (
     <div>
       user
-      <input type="text" placeholder="username" />
+      <input
+        type="text"
+        placeholder="username"
+        // onChange={(e) => setUser(e.target.value)}
+        onBlur={onUserComplete}
+      />
     </div>
   );
 };
