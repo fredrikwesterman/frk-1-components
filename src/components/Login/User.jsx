@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Login.module.css";
 
 const User = ({ setUser }) => {
   const onUserComplete = (e) => {
@@ -6,7 +7,7 @@ const User = ({ setUser }) => {
   };
 
   return (
-    <div>
+    <div className={styles.userContainer}>
       user
       <input
         type="text"

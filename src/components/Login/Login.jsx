@@ -1,6 +1,9 @@
 import React from "react";
 import User from "./User";
 import Password from "./Password";
+import Button from "./Button";
+import styles from "./login.module.css";
+
 import { useState } from "react";
 
 const Login = () => {
@@ -8,11 +11,10 @@ const Login = () => {
   const [password, setPassword] = useState(null);
 
   return (
-    <div>
+    <div className={styles.loginContainer}>
       <User setUser={setUser} />
       <Password setPassword={setPassword} />
-      <p>username: {user}</p>
-      <p>password: {password}</p>
+      <Button />
     </div>
   );
 };
