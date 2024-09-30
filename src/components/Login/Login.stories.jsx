@@ -1,7 +1,7 @@
 import Login from "./Login";
 
 export default {
-  title: "FRK/components/Login",
+  title: "FRK/components/Login/Login",
   component: Login,
 };
 

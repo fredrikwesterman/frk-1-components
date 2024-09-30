@@ -8,7 +8,7 @@ const Password = ({ setPassword }) => {
 
   return (
     <div className={styles.passwordContainer}>
-      Password
+      <label>Password</label>
       <input
         type="password"
         placeholder="password"

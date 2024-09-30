@@ -1,7 +1,7 @@
 import Button from "./Button";
 
 export default {
-  title: "FRK/components/Button",
+  title: "FRK/components/Login/Button",
   component: Button,
 };
 

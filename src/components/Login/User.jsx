@@ -8,7 +8,7 @@ const User = ({ setUser }) => {
 
   return (
     <div className={styles.userContainer}>
-      user
+      <label>Username</label>
       <input
         type="text"
         placeholder="username"

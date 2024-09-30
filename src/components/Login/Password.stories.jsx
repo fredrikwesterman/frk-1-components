@@ -1,7 +1,7 @@
 import Password from "./Password";
 
 export default {
-  title: "FRK/components/Password",
+  title: "FRK/components/Login/Password",
   component: Password,
 };
 
