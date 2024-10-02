@@ -5,12 +5,12 @@ import Button from "./Button";
 import styles from "./login.module.css";
 import NotRegistered from "./NotRegistered";
 
-const Login = ({ loginHandler, setUser, setPassword }) => {
+const Login = ({ loginHandler, setUser, setPassword, buttonText }) => {
   return (
     <div className={styles.loginContainer}>
       <User setUser={setUser} />
       <Password setPassword={setPassword} />
-      <Button loginHandler={loginHandler} />
+      <Button loginHandler={loginHandler} buttonText={buttonText} />
       <NotRegistered />
     </div>
   );
