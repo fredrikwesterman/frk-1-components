@@ -5,17 +5,12 @@ import Button from "./Button";
 import styles from "./login.module.css";
 import NotRegistered from "./NotRegistered";
 
-import { useState } from "react";
-
-const Login = () => {
-  const [user, setUser] = useState(null);
-  const [password, setPassword] = useState(null);
-
+const Login = ({ loginHandler, setUser, setPassword }) => {
   return (
     <div className={styles.loginContainer}>
       <User setUser={setUser} />
       <Password setPassword={setPassword} />
-      <Button />
+      <Button loginHandler={loginHandler} />
       <NotRegistered />
     </div>
   );

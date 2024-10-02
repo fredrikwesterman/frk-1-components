@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./login.module.css";
 
-const Button = () => {
+const Button = ({ loginHandler }) => {
   return (
     <div className={styles.buttonContainer}>
-      <button>Login</button>
+      <button onClick={loginHandler}>Login</button>
     </div>
   );
 };

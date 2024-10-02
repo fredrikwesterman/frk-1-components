@@ -9,12 +9,7 @@ const User = ({ setUser }) => {
   return (
     <div className={styles.userContainer}>
       <label>Username</label>
-      <input
-        type="text"
-        placeholder="username"
-        // onChange={(e) => setUser(e.target.value)}
-        onBlur={onUserComplete}
-      />
+      <input type="text" placeholder="username" onBlur={onUserComplete} />
     </div>
   );
 };
