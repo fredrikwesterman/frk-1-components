@@ -1,6 +1,6 @@
 {
   "name": "@fredwe/frk-1-components",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -62,5 +62,8 @@
     "dist",
     "assets/fonts",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "npm": "^10.8.3"
+  }
 }
